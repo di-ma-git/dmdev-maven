@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dmdev</groupId>
     <artifactId>first-maven</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <name>first-maven</name>
@@ -16,7 +15,8 @@
         <connection>scm:git:git@github.com:di-ma-git/dmdev-maven.git</connection>
         <developerConnection>scm:git:git@github.com:di-ma-git/dmdev-maven.git</developerConnection>
         <url>https://github.com/di-ma-git/dmdev-maven-hw.git</url>
-    </scm>
+      <tag>first-maven-1.0.0</tag>
+  </scm>
 
     <modules>
         <module>database</module>
@@ -263,7 +263,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>nexus</id>
-            <name></name>
+            <name />
             <url>http://172.17.225.240:9000/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
