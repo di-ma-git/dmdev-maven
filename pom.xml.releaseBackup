@@ -6,7 +6,7 @@
 
     <groupId>com.dmdev</groupId>
     <artifactId>first-maven</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>first-maven</name>
@@ -16,14 +16,12 @@
         <connection>scm:git:git@github.com:di-ma-git/dmdev-maven.git</connection>
         <developerConnection>scm:git:git@github.com:di-ma-git/dmdev-maven.git</developerConnection>
         <url>https://github.com/di-ma-git/dmdev-maven-hw.git</url>
-        <tag>HEAD</tag>
     </scm>
 
     <modules>
         <module>database</module>
         <module>service</module>
         <module>web</module>
-        <module>hello-plugin</module>
     </modules>
 
     <properties>
@@ -85,10 +83,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
-                <!--                <configuration>-->
-                <!--                    <tag></tag>-->
-                <!--                    <allowTimestampedSnapshots>true</allowTimestampedSnapshots>-->
-                <!--                </configuration>-->
+<!--                <configuration>-->
+<!--                    <tag></tag>-->
+<!--                    <allowTimestampedSnapshots>true</allowTimestampedSnapshots>-->
+<!--                </configuration>-->
 
             </plugin>
         </plugins>
@@ -234,8 +232,8 @@
         <profile>
             <id>prod</id>
             <activation>
-                <!--                <activeByDefault>true</activeByDefault>-->
-                <!--                <jdk>11</jdk>-->
+<!--                <activeByDefault>true</activeByDefault>-->
+<!--                <jdk>11</jdk>-->
                 <file>
                     <exists>${basedir}/pom.xml</exists>
                 </file>
@@ -265,7 +263,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>nexus</id>
-            <name/>
+            <name></name>
             <url>http://172.17.225.240:9000/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
